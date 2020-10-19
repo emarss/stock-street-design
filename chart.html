@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Stock Street</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/sina-nav.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+
+    <!-- Highcharts -->
+    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/stocktools/gui.css">
+    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/annotations/popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="sticky-top">
+        <nav class="navbar nav-top navbar-dark navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-home d-none d-md-flex"></i>
+                    <img src="img/logo.png" class="d-md-none" alt="Stock Street">
+                </a>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Matching Stock</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sens</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-inline social-links">
+                    <a class="navbar-brand" target="_blank" href="#"> <i class="fa fa-twitter"></i> </a>
+                    <a class="navbar-brand" target="_blank" href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a class="navbar-brand" target="_blank" href="#"> <i class="fa fa-youtube"></i> </a>
+                    <!-- <a href="#" class="widget-bar-btn"><i class="fa fa-bars"></i></a> -->
+                </div>
+            </div>
+        </nav>
+        <div class="nav-bottom d-none d-md-flex ">
+            <div class="container d-flex py-2 justify-content-between">
+                <a href="">
+                    <img src="img/logo.png" class="logo" alt="Stock Street">
+                </a>
+                <form action="#">
+                    <input type="text" class="search" placeholder="Search for news, symbols or companies">
+                    <button class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div class="mr-3">
+                    <a href="" class="btn btn-outline-primary rounded-bottom rounded-top btn-sm" title="">Sign In</a>
+                    <a href="" class="icon-btn mx-2 text-primary" title="">
+                        <i class="fa fa-bell"></i>
+                    </a>
+                    <a href="" class="icon-btn text-primary" title="">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="sina-nav mobile-sidebar z-depth-1 navbar-transparent" data-top="40" data-md-top="40" data-xl-top="40">
+        <div class="d-flex container">
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="sina-menu justify-content-between d-flex" data-in="fadeInDown" data-out="fadeInOut">
+                    <li><a href="#home">Stock Street</a></li>
+                    <li class="dropdown">
+                        <a href="#about" class="dropdown-toggle" data-toggle="dropdown">Premium <i class="fa fa-lock"></i> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Research Reports</a></li>
+                            <li><a href="#">Investments Reports</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Markets</a></li>
+                    <li class="dropdown menu-item-has-mega-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mews</a>
+                        <div class="mega-menu dropdown-menu">
+                            <ul class="mega-menu-row" role="menu">
+                                <li class="mega-menu-col col-md-3">
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Lattest News</a></li>
+                                        <li><a href="#">Stock Market News</a></li>
+                                        <li><a href="#">Morning Brief</a></li>
+                                        <li><a href="#">Stock Street</a></li>
+                                        <li><a href="#">Matching Stock</a></li>
+                                        <li><a href="#">Trending Business News</a></li>
+                                        <li><a href="#">Exchange Rates</a></li>
+                                        <li><a href="#">News Videos</a></li>
+                                        <li><a href="#">About Zim Inflation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-col col-md-3">
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Lattest News</a></li>
+                                        <li><a href="#">Stock Market News</a></li>
+                                        <li><a href="#">Morning Brief</a></li>
+                                        <li><a href="#">Stock Street</a></li>
+                                        <li><a href="#">Matching Stock</a></li>
+                                        <li><a href="#">Trending Business News</a></li>
+                                        <li><a href="#">Exchange Rates</a></li>
+                                        <li><a href="#">News Videos</a></li>
+                                        <li><a href="#">About Zim Inflation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-col col-md-3">
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Lattest News</a></li>
+                                        <li><a href="#">Stock Market News</a></li>
+                                        <li><a href="#">Morning Brief</a></li>
+                                        <li><a href="#">Stock Street</a></li>
+                                        <li><a href="#">Matching Stock</a></li>
+                                        <li><a href="#">Trending Business News</a></li>
+                                        <li><a href="#">Exchange Rates</a></li>
+                                        <li><a href="#">News Videos</a></li>
+                                        <li><a href="#">About Zim Inflation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-col col-md-3">
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Lattest News</a></li>
+                                        <li><a href="#">Stock Market News</a></li>
+                                        <li><a href="#">Morning Brief</a></li>
+                                        <li><a href="#">Stock Street</a></li>
+                                        <li><a href="#">Matching Stock</a></li>
+                                        <li><a href="#">Trending Business News</a></li>
+                                        <li><a href="#">Exchange Rates</a></li>
+                                        <li><a href="#">News Videos</a></li>
+                                        <li><a href="#">About Zim Inflation</a></li>
+                                    </ul>
+                                </li>
+                            </ul><!-- end row -->
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#about" class="dropdown-toggle" data-toggle="dropdown">Personal Finance </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Retirement</a></li>
+                            <li><a href="#">Taxes</a></li>
+                            <li><a href="#">Articles & Taxes</a></li>
+                            <li><a href="#">Rates</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">FAQ & Help</a></li>
+                </ul>
+                <a href="" class="btn btn-primary btn-sm badge-pill mt-2 mr-3 float-right">
+                    <i class="fa fa-envelope"></i> Email Us
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div class="indices">
+            <div class="indices-inner">
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-primary">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-danger">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-primary">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-primary">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-danger">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-primary">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-danger">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-danger">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-right">
+                    <div class="row px-0 mx-0">
+                        <div class="col-12">
+                            <a hre="#" class="text-primary font-weight-bold">ZSE All Share Index</a>
+                        </div>
+                        <div class="col-5">
+                            <span>1,290.84</span><br>
+                            <span class="text-danger">1.01</span>
+                        </div>
+                        <div class="col-7 sparkline">
+                            <img src="img/sparkline.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-2 counter-nav">
+            <div class="col-12">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary active" href="#">Quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Compare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Financials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Operating Performance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Trailing Returns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Ratios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn font-16 btn-primary" href="#">Shareholders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mb-4 counter">
+            <div class="col-12 pb-4">
+                <b class="font-weight-bold font-25">African Sun Limited</b>
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="full-width" id="stock-chart-type-two"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row report-post">
+                    <div class="col-12">
+                        <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                        <i class="text-muted mr-2">Harare</i>
+                        <i class="text-muted">&#x25cf; 1 day ago</i>
+                    </div>
+                    <div class="col-12">
+                        <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                        <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <b class="font-weight-bold small">
+                                                    Gold Price Forecast – Critical Price Levels for The Next 48-Hours
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <b class="font-weight-bold small">
+                                                    Gold Price Forecast – Critical Price Levels for The Next 48-Hours
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row report-post">
+                    <div class="col-12">
+                        <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                        <i class="text-muted mr-2">Harare</i>
+                        <i class="text-muted">&#x25cf; 1 day ago</i>
+                    </div>
+                    <div class="col-12">
+                        <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                        <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <b class="font-weight-bold small">
+                                                    Gold Price Forecast – Critical Price Levels for The Next 48-Hours
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <b class="font-weight-bold small">
+                                                    Gold Price Forecast – Critical Price Levels for The Next 48-Hours
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4">
+                        <img src="img/team.jpg" alt="Post Title" class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="row report-post">
+                            <div class="col-12">
+                                <b class="font-weight-bold text-primary mr-3">REPORTS</b>
+                                <i class="text-muted mr-2">Harare</i>
+                                <i class="text-muted">&#x25cf; 1 day ago</i>
+                            </div>
+                            <div class="col-12">
+                                <b class="font-weight-bold">Freeport Minerals Corporation -- Moody's announces completion of a periodic review of ratings of Freeport-McMoRan Inc.</b>
+                                <p>New York, August 20, 2020 -- Moody's Investors Service ("Moody's") has completed a periodic review of the ratings of Freeport-McMoRan Inc. other ratings that are associated with the same analytical unit. The review was conducted...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row related-posts mb-5">
+                    <div class="col-12 line-height-14 my-3">
+                        <img src="img/ted.jpg" alt="" class="img-fluid mb-2">
+                        <a href="" class="font-weight-bold font-12">NBA boycott: Milwaukee Bucks to strike in playoff protest over Jacob Blake shooting</a>
+                    </div>
+                    <div class="col-12 line-height-14 my-3">
+                        <img src="img/ted.jpg" alt="" class="img-fluid mb-2">
+                        <a href="" class="font-weight-bold font-12">NBA boycott: Milwaukee Bucks to strike in playoff protest over Jacob Blake shooting</a>
+                    </div>
+                    <div class="col-12 line-height-14 my-3">
+                        <img src="img/ted.jpg" alt="" class="img-fluid mb-2">
+                        <a href="" class="font-weight-bold font-12">NBA boycott: Milwaukee Bucks to strike in playoff protest over Jacob Blake shooting</a>
+                    </div>
+                    <div class="col-12 line-height-14 my-3">
+                        <img src="img/ted.jpg" alt="" class="img-fluid mb-2">
+                        <a href="" class="font-weight-bold font-12">NBA boycott: Milwaukee Bucks to strike in playoff protest over Jacob Blake shooting</a>
+                    </div>
+                </div>
+                <div class="mt-5 row sidebar-footer sticky-top">
+                    <div class="col-12">
+                        <a href="#" class="btn btn-info btn-block">Advertise With Us</a>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                        <a href="#" class="font-weight-bold mx-2"> Data Disclaimer</a>
+                        <a href="#" class="font-weight-bold mx-2"> Help</a>
+                        <a href="#" class="font-weight-bold mx-2"> Suggestions</a>
+                        <a href="#" class="font-weight-bold mx-2"> Privacy Policy</a>
+                        <a href="#" class="font-weight-bold mx-2"> About our Ads</a>
+                        <a href="#" class="font-weight-bold mx-2"> Terms of Use</a>
+                        <a href="#" class="font-weight-bold mx-2"> Site Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/sina-nav.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Highcharts -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+
+    <script src="https://code.highcharts.com/stock/indicators/indicators-all.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/drag-panes.js"></script>
+
+    <script src="https://code.highcharts.com/modules/annotations-advanced.js"></script>
+    <script src="https://code.highcharts.com/modules/price-indicator.js"></script>
+    <script src="https://code.highcharts.com/modules/full-screen.js"></script>
+
+    <script src="https://code.highcharts.com/modules/stock-tools.js"></script>
+
+    <script>
+     Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlcv.json', function (data) {
+
+        // split the data set into ohlc and volume
+        var ohlc = [],
+            volume = [],
+            dataLength = data.length,
+            i = 0;
+
+        for (i; i < dataLength; i += 1) {
+            ohlc.push([
+                data[i][0], // the date
+                data[i][1], // open
+                data[i][2], // high
+                data[i][3], // low
+                data[i][4] // close
+            ]);
+
+            volume.push([
+                data[i][0], // the date
+                data[i][5] // the volume
+            ]);
+        }
+
+        Highcharts.stockChart('stock-chart-type-two', {
+            yAxis: [{
+                labels: {
+                    align: 'left'
+                },
+                height: '80%',
+                resize: {
+                    enabled: true
+                }
+            }, {
+                labels: {
+                    align: 'left'
+                },
+                top: '80%',
+                height: '20%',
+                offset: 0
+            }],
+            tooltip: {
+                shape: 'square',
+                headerShape: 'callout',
+                borderWidth: 0,
+                shadow: false,
+                positioner: function (width, height, point) {
+                    var chart = this.chart,
+                        position;
+
+                    if (point.isHeader) {
+                        position = {
+                            x: Math.max(
+                                // Left side limit
+                                chart.plotLeft,
+                                Math.min(
+                                    point.plotX + chart.plotLeft - width / 2,
+                                    // Right side limit
+                                    chart.chartWidth - width - chart.marginRight
+                                )
+                            ),
+                            y: point.plotY
+                        };
+                    } else {
+                        position = {
+                            x: point.series.chart.plotLeft,
+                            y: point.series.yAxis.top - chart.plotTop
+                        };
+                    }
+
+                    return position;
+                }
+            },
+            series: [{
+                type: 'ohlc',
+                id: 'aapl-ohlc',
+                name: 'AAPL Stock Price',
+                data: ohlc
+            }, {
+                type: 'column',
+                id: 'aapl-volume',
+                name: 'AAPL Volume',
+                data: volume,
+                yAxis: 1
+            }],
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 800
+                    },
+                    chartOptions: {
+                        rangeSelector: {
+                            inputEnabled: false
+                        }
+                    }
+                }]
+            }
+        });
+    });
+
+    </script>
+</body>
+
+</html>

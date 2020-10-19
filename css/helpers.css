@@ -1,0 +1,143 @@
+p{
+	justify-content: center !important;
+}
+.full-width{
+	width: 100% !important;
+}
+.font-weight-bolder{
+	font-weight: 900 !important;
+}
+.font-weight-strong{
+	font-weight: 500 !important;
+}
+.line-height-14{
+	line-height: 14px !important;
+}
+.line-height-15{
+	line-height: 15px !important;
+}
+.line-height-16{
+	line-height: 16px !important;
+}
+.line-height-17{
+	line-height: 17px !important;
+}
+.line-height-18{
+	line-height: 18px !important;
+}
+
+.font-10{
+	font-size: 10px !important;
+}
+.font-11{
+	font-size: 11px !important;
+}
+.font-12{
+	font-size: 12px !important;
+}
+.font-13{
+	font-size: 13px !important;
+}
+.font-14{
+	font-size: 14px !important;
+}
+.font-15{
+	font-size: 15px !important;
+}
+.font-16{
+	font-size: 16px !important;
+}
+.font-17{
+	font-size: 17px !important;
+}
+.font-18{
+	font-size: 18px !important;
+}
+.font-19{
+	font-size: 19px !important;
+}
+.font-20{
+	font-size: 20px !important;
+}
+.font-21{
+	font-size: 21px !important;
+}
+.font-22{
+	font-size: 22px !important;
+}
+.font-23{
+	font-size: 23px !important;
+}
+.font-24{
+	font-size: 24px !important;
+}
+.font-25{
+	font-size: 25px !important;
+}
+.font-26{
+	font-size: 26px !important;
+}
+.font-27{
+	font-size: 27px !important;
+}
+.font-28{
+	font-size: 28px !important;
+}
+.font-29{
+	font-size: 29px !important;
+}
+.font-30{
+	font-size: 30px !important;
+}
+.rounded-right-0{
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+.rounded-left-0{
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+.custom-rounded{
+	border-radius: 3px !important;
+}
+.custom-rounded-right{
+	border-top-right-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+}
+.custom-rounded-left{
+	border-top-left-radius: 3px !important;
+	border-bottom-left-radius: 3px !important;
+}
+.py-2-5{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.py-0-5{
+	padding-top: 0.125rem !important;
+	padding-bottom: 0.125rem !important;
+}
+.py-1-5{
+	padding-top: 0.375rem !important;
+	padding-bottom: 0.375rem !important;
+}
+.border-2{
+    border: 2px solid #dee2e6;
+}
+.smaller{
+	font-size: 90% !important;
+}
+.bg-cadetblue{
+	background-color: cadetblue;
+}
+.border-cadetblue{
+	background-color: cadetblue;
+}
+.default-text{
+	text-transform: unset !important;
+}
+.opacity-7{
+	opacity: 70% !important;
+}
+.opacity-3{
+	opacity: 30% !important;
+}
